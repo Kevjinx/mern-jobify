@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+import Landing from "./Landing";
+import styled from "styled-components";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Jobify</h1>
+    <div>
+      <Landing />
     </div>
   );
 }
