@@ -1,13 +1,18 @@
-import { Landing } from "./pages";
-import styled from "styled-components";
-
-
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { NavBar } from './assets/components';
+import { Landing, Register, Dashboard, Error } from './assets/pages'
 
 function App() {
   return (
-    <div>
-      <Landing />
-    </div>
+    <BrowserRouter>
+        <NavBar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/landing" element={<Landing />} />
+        <Route path="*" element={< Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

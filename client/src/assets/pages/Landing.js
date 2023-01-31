@@ -1,7 +1,7 @@
-import React from 'react'
-import mainImg from '../assets/images/main-alternative.svg'
-import Wrapper from '../assets/wrappers/LandingPage'
-import { Logo } from '../assets/component/index'
+import mainImg from '../images/main-alternative.svg'
+import Wrapper from '../wrappers/LandingPage'
+import { Logo } from '../components'
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
 	return (
@@ -17,7 +17,10 @@ const Landing = () => {
 					<p>
 						Do irure proident commodo tempor fugiat pariatur anim labore quis sint consectetur Lorem dolor. Anim ad ex ea proident incididunt irure eu.
 					</p>
-					<button className='btn btn-hero'>Login/Register</button>
+					{/* Link is nested in landing, ie, /landing/register */}
+					<Link to='./register' className='btn btn-hero'>
+						Login/Register
+					</Link>
 				</div>
 				<div className='image'>
 					<img src={mainImg} alt='job hunt' className='img main-img'/>
