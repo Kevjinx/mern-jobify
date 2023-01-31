@@ -3,7 +3,9 @@
 
 import Logo from './logo'
 import NavBar from './navBar'
+import FormRow from './formRow'
+import Alert from './alert'
 
 
 
-export { Logo, NavBar}
+export { Logo, NavBar, FormRow, Alert }
